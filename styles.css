@@ -6,12 +6,42 @@
     font-size: 16px;
 }
 /*----------------------*/
+.mainNav a{
+    margin: 0px;
+}
+.mainNav a:hover{
+    color: white;
+}
+.mainNav .icon{
+    color: black;
+}
+.mainNav{
+    padding: 2px;
+}
+.nav1{
+    padding: 5px 12px;
+}
+.mainNav li{
+    text-align: center;
+    list-style-type: none !important;
+    padding: 10px 5px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.mainNav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+/*----------------------*/
 .sidebar {
     height: 100%;
     position: fixed;
     right: 0px;
-    background: #fff4f49e;
-    border-left: 5px solid #ffb606;
+    background-color: #f8f9fa;
+/*    border-left: 5px solid #ffb606;*/
     box-shadow: rgb(52 52 52 / 35%) 0px 1px 5px 0px;
 }
 ul{
@@ -29,45 +59,50 @@ li{
     font-size: 16px;
     position: relative;
 }
-li:hover{
-    color: #ffb606;
-    background-color: #fff;
-    transition: 0.5s ease-in-out;
-}
-li:hover:before{
-    display: block;
-    border-color: transparent #ffb606  transparent transparent;
-    transition: 0.5s ease-in-out;
-}
-li::before{
-    content: " ";
-    z-index: 9;
-    position: absolute;
-    left: -95px;
-    top: 50%;
-    border: 15px solid;
-    border-color: transparent transparent transparent transparent;
-    margin-top: -15px;
-    transition: 0.5s ease-in-out;
-}
-@media (max-width: 992px) {
-    li::before{
-        left: -65px;
+@media (min-width: 768px) { 
+
+    li:hover{
+        color: #ffb606;
+        background-color: #fff;
+        transition: 0.5s ease-in-out;
     }
-}
-.icon{
-    font-size: 18px;
-    margin-left: 10px;
-    color: black;
+    li:hover:before{
+        display: block;
+        border-color: transparent #ffb606  transparent transparent;
+        transition: 0.5s ease-in-out;
+    }
+    li::before{
+        content: " ";
+        z-index: 9;
+        position: absolute;
+        left: -90px;
+        top: 50%;
+        border: 15px solid;
+        border-color: transparent transparent transparent transparent;
+        margin-top: -15px;
+        transition: 0.5s ease-in-out;
+    }
+    @media (max-width: 992px) {
+        li::before{
+            left: -65px;
+        }
+    }
+    .icon{
+        font-size: 18px;
+        margin-left: 10px;
+        color: black !important;
+        }
 }
 /*----------------------*/
 .viewport{
     display: flex;
     justify-content: center;
 }
+.con{
+    display: flex;
+}
 h1{
     padding: 12px;
-/*    border: 2px solid #ffb606;*/
     text-align: center;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -82,12 +117,12 @@ h1{
 }
 .viewport p{
     font-size: 18px;
-    
+    margin: 10px;
 }
 /*----------------------*/
 .form{
     text-align: center;
-    margin: 50px;
+    margin: 50px 0;
 }
 a{
     position: relative;
@@ -98,7 +133,6 @@ a{
     overflow: hidden;
     transition: 0.3s;
     margin-top: 5px;
-    width: 30%;
     margin-top: 15px;
     text-align: center;
     box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
