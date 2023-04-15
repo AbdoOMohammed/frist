@@ -5,25 +5,27 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-/*----------------------*/
-.mainNav a{
-    margin: 0px;
-}
-.mainNav a:hover{
-    color: white;
-}
-.mainNav .icon{
+.icon{
     color: black;
+    margin-left: 10px;
 }
+/*----------mob------------*/
+.mainNav .namozag{
+    margin: 0px;
+    box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
+    border-radius: 9px;
+    padding: 5px 10px;
+}
+
 .mainNav{
     padding: 2px;
+    border-bottom: 2px solid #e1e1e1;
 }
 .nav1{
     padding: 5px 12px;
 }
-.mainNav li{
+.mainNav .button{
     text-align: center;
-    list-style-type: none !important;
     padding: 10px 5px;
     margin: 20px 0;
     font-size: 14px;
@@ -35,20 +37,23 @@
     margin: 0px;
     padding: 0px;
 }
-/*----------------------*/
+/*--------Pc--------------*/
 .sidebar {
     height: 100%;
     position: fixed;
     right: 0px;
     background-color: #f8f9fa;
-/*    border-left: 5px solid #ffb606;*/
     box-shadow: rgb(52 52 52 / 35%) 0px 1px 5px 0px;
 }
 ul{
     display: inline-block;
     margin-top: 45px;
 }
-li{
+a{
+    text-decoration: none;
+}
+.button{
+    display: inline-block;
     padding: 10px 20px;
     margin: 20px;
     background-color: #ffb606;
@@ -58,50 +63,48 @@ li{
     font-weight: bold;
     font-size: 16px;
     position: relative;
+    border: 1px solid white;
+    text-align: start;
 }
-@media (min-width: 768px) { 
-
-    li:hover{
-        color: #ffb606;
-        background-color: #fff;
-        transition: 0.5s ease-in-out;
+:target{
+    color: #ffb606 ;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+@media (min-width: 768px) {   
+    .button:target:before{
+        left: -75px;
+        transition: 0.8s;
     }
-    li:hover:before{
-        display: block;
-        border-color: transparent #ffb606  transparent transparent;
-        transition: 0.5s ease-in-out;
-    }
-    li::before{
+    .button::before{
         content: " ";
-        z-index: 9;
         position: absolute;
-        left: -90px;
+        left: -45px;
         top: 50%;
         border: 15px solid;
-        border-color: transparent transparent transparent transparent;
+        border-color: transparent #ffb606  transparent transparent;
         margin-top: -15px;
-        transition: 0.5s ease-in-out;
+        transition: 1.2s;
     }
     @media (max-width: 992px) {
-        li::before{
+        .button::before{
+            left: -45px;
+        }
+        .button:target:before{
             left: -65px;
+            transition: 0.8s;
         }
     }
     .icon{
         font-size: 18px;
-        margin-left: 10px;
-        color: black !important;
         }
 }
-/*----------------------*/
+/*---------content-------------*/
 .viewport{
     display: flex;
     justify-content: center;
 }
-.con{
-    display: flex;
-}
-h1{
+h2{
     padding: 12px;
     text-align: center;
     margin-top: 50px;
@@ -109,90 +112,92 @@ h1{
     position: relative;
     display: inline-block;
     border-radius: 10px;
-    box-shadow: #ffb60659 0px 2px 3px 1px;;
+    box-shadow: #ffb60659 0px 1px 3px 2px;
     font-weight: bold;
 }
-.hh{
+.hed{
     text-align: center;
 }
 .viewport p{
     font-size: 18px;
     margin: 10px;
 }
-/*----------------------*/
+#secsion_2,#secsion_3,#secsion_4,#secsion_5{
+    display: none;
+}
+/*-------Button Botton--------*/
 .form{
     text-align: center;
     margin: 50px 0;
 }
-a{
+.content a{
     position: relative;
     display: inline-block;
+    border-radius: 9px;
     padding: 10px 15px;
     color: black ;
     text-decoration: none;
     overflow: hidden;
-    transition: 0.3s;
-    margin-top: 5px;
     margin-top: 15px;
     text-align: center;
     box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
-    border-radius: 9px;
+    transition: 0.3s;
 }
 spam{
     font-weight: bolder;
     font-size: 18px; 
 }
-a span{
+.content span{
     position: absolute;
     display: block;
 }
-a span:nth-child(1){
+.content a span:nth-child(1){
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg,transparent,rgb(213, 6, 6));
 }
-a:hover span:nth-child(1){
+.content a:hover span:nth-child(1){
     left: 100%;
     transition: 2s;
 }
-a span:nth-child(3){
+.content a span:nth-child(3){
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg,transparent,rgb(213, 6, 6));
 }
-a:hover span:nth-child(3){
+.content a:hover span:nth-child(3){
     right: 100%;
     transition: 2s;
 }
-a span:nth-child(2){
+.content a span:nth-child(2){
     top: -100%;
     right:0;
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg,transparent,rgb(213, 6, 6));
 }
-a:hover span:nth-child(2){
+.content a:hover span:nth-child(2){
     top: 100%;
     transition: 0.5s;
     transition-delay: 0.5s;
 }
-a span:nth-child(4){
+.content a span:nth-child(4){
     bottom: -100%;
     left:0;
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg,transparent,rgb(213, 6, 6));
 }
-a:hover span:nth-child(4){
+.content a:hover span:nth-child(4){
     bottom: 100%;
     transition: 0.5s;
     transition-delay: 0.5s;
 }
-a:hover{
+.content a:hover{
     color: white;
     background-color: #ffb606;
     box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
@@ -201,9 +206,5 @@ a:hover{
 
 
 
-
-
-/*#ffb60680 -1px 2px 4px 3px;*/
-/*#ffb60659 0px 2px 3px 1px;*/
 
 
