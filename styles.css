@@ -9,14 +9,13 @@
     color: black;
     margin-left: 10px;
 }
-/*----------mob------------*/
+/*---------nav--------*/
 .mainNav .namozag{
     margin: 0px;
     box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
     border-radius: 9px;
     padding: 5px 10px;
 }
-
 .mainNav{
     padding: 2px;
     border-bottom: 2px solid #e1e1e1;
@@ -26,24 +25,25 @@
 }
 .mainNav .button{
     text-align: center;
-    padding: 10px 5px;
+    padding: 10px 0px;
     margin: 20px 0;
-    font-size: 14px;
+    font-size: 12px;
 }
 .mainNav ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0px;
+    align-items: flex-start;
+    margin:0 5px 0 0;
     padding: 0px;
 }
-/*--------Pc--------------*/
+/*---------main-----------*/
 .sidebar {
     height: 100%;
     position: fixed;
     right: 0px;
     background-color: #f8f9fa;
     box-shadow: rgb(52 52 52 / 35%) 0px 1px 5px 0px;
+    display: block;
 }
 ul{
     display: inline-block;
@@ -71,7 +71,66 @@ a{
     background-color: #fff;
     transition: 0.5s ease-in-out;
 }
-@media (min-width: 768px) {   
+/*----------mob------------*/
+@media (max-width: 768px) {   
+    .sidebar{
+        font-weight: bold;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        display: none;
+    }
+    .button{
+        padding: 5px 2px 5px 0;
+        margin: 15px 2px;
+        font-size: 12px;
+    }
+    #close{
+        background: none;
+        border: none;
+        margin-right: 10px;
+    }
+    .closeIcon{
+        font-size: 20px;
+        color: white;
+    }
+    .mainMenu{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        margin: 5px;
+    }
+    .top_1{
+        padding: 15px 20px;
+        background-color: #ff8e03eb;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .top_1 P{
+        margin: 0;
+        padding: 0;
+    }
+    /*---------background--------*/
+    .background{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000aa;
+        z-index: 999;
+    }
+}
+/*--------Pc--------------*/
+@media (min-width: 768px) { 
+    .top_1{
+        display: none;
+    }
     .button:target:before{
         left: -75px;
         transition: 0.8s;
@@ -112,7 +171,7 @@ h2{
     position: relative;
     display: inline-block;
     border-radius: 10px;
-    box-shadow: #ffb60659 0px 1px 3px 2px;
+    box-shadow: #9f9f9f59 0px 1px 3px 2px;
     font-weight: bold;
 }
 .hed{
@@ -131,6 +190,7 @@ h2{
     margin: 50px 0;
 }
 .content a{
+    border: 2px solid #9b9b9b6e;
     position: relative;
     display: inline-block;
     border-radius: 9px;
@@ -203,8 +263,6 @@ spam{
     box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
     transition-delay: 0.5s;
 }
-
-
 
 
 
