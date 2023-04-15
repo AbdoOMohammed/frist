@@ -8,78 +8,38 @@
         <link rel="stylesheet" href="all.min.css">
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
-<!--        <link rel="stylesheet" href="main.css">-->
         <title></title>
     </head>
-<!----------------------------------------------->
-<!--
-    <header class="hidden-print">
-        <div class="main-container">
-            <a href="{{ route('home') }}">
-                <div class="logo">
-                    <img src="logo.png" alt="">
-                </div>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#Gallery">البرامج التعليمية</a></li>
-                    <li><a href="#Articles">المواصفات الاكاديمية</a></li>
-                    <li><a href="#Features">الطلاب</a></li>
-                    <li><a href="#Articles">البرامج الاكاديمية</a></li>
-                    <li><a href="#Staff">اعضاء هيئة التدريس</a></li>
-                    <li><a href="#Features">خطه الجودة</a></li>
-                </ul>
-            </nav>
-            <div class="icons">
-                <a href="" style="text-decoration: none; color: black">
-                    <i class="fa-regular fa-user login"></i>
-                </a>
-                <a href="" class="lang-icon"></a>
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        <div class="nav-responsive hidden">
-            <ul>
-                <li><a href="#Gallery">jjjj</a></li>
-                <li><a href="#Articles">kkkk</a></li>
-                <li><a href="#Features">llll</a></li>
-                <li><a href="#Articles">mmmm</a></li>
-                <li><a href="#Staff">nnnn</a></li>
-                <li><a href="#Features">oooo</a></li>
-            </ul>
-        </div>
-    </header>
--->
 <!----------------------------------------------->
     <body>
         <nav class="mainNav navbar navbar-expand-lg bg-light navMain navbar-light d-block d-md-none">
             <div class="nav1 container-fluid">
-                <a class="navbar-brand" href="#">النماذج</a>
+                <a class="navbar-brand namozag" href="#">النماذج</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="col-md-12 col-lg-12">
-                        <li class="col-8">
+                        <a class="button col-8" onclick="funSecsion_1()" id="butt_1" href="#butt_1">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج تحديد سياسات التعليم والتعلم
-                        </li>
-                        <li class="col-8">
+                        </a>
+                        <a class="button col-8" onclick="funSecsion_2()" id="butt_2" href="#butt_2">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج تحديد أساليب التعليم والتعلم
-                        </li>
-                        <li class="col-8">
+                        </a>
+                        <a class="button col-8" onclick="funSecsion_3()" id="butt_3" href="#butt_3">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج التعلم الذاتى
-                        </li>
-                        <li class="col-8">
+                        </a>
+                        <a class="button col-8" onclick="funSecsion_4()" id="butt_4" href="#butt_4">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج تدريب وتنمية مهارات الطلاب
-                        </li>
-                        <li class="col-8">
+                        </a>
+                        <a class="button col-8" onclick="funSecsion_5()" id="butt_5" href="#butt_5">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج نظام التقويم لمخرجات التعلم
-                        </li>
+                        </a>
                     </ul>
                 </div>
             </div>
@@ -87,135 +47,138 @@
 <!----------------------------------------------->
         <div class="sidebar d-none d-md-block col-md-4 col-lg-4 col-xl-3">
             <ul class="col-md-12 col-lg-12">
-                <li class="col-md-12 col-lg-11">
+                <a class="button col-md-12 col-lg-11" onclick="funSecsion_1()" id="but_1" href="#but_1">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج تحديد سياسات التعليم والتعلم
-                </li>
-                <li class="col-md-12 col-lg-11">
+                </a>
+                <a class="button col-md-12 col-lg-11" onclick="funSecsion_2()" id="but_2" href="#but_2">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج تحديد أساليب التعليم والتعلم
-                </li>
-                <li class="col-md-12 col-lg-11">
+                </a>
+                <a class="button col-md-12 col-lg-11" onclick="funSecsion_3()" id="but_3" href="#but_3">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج التعلم الذاتى
-                </li>
-                <li class="col-md-12 col-lg-11">
+                </a>
+                <a class="button col-md-12 col-lg-11" onclick="funSecsion_4()" id="but_4" href="#but_4">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج تدريب وتنمية مهارات الطلاب
-                </li>
-                <li class="col-md-12 col-lg-11">
+                </a>
+                <a class="button col-md-12 col-lg-11" onclick="funSecsion_5()" id="but_5" href="#but_5">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج نظام التقويم لمخرجات التعلم
-                </li>
+                </a>
             </ul>
         </div>
 <!----------------------------------------------->
-        <div class="viewport w-100">
-            <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
-            <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8">
-                <div class="container">
-                    <div class="hh">
-                        <h1>نموذج تحديد سياسات التعليم والتعلم</h1>
+        <div class="content">
+            <div class="viewport w-100">
+                <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
+                <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8" id="secsion_1">
+                    <div class="container">
+                        <div class="hed">
+                            <h2>نموذج تحديد سياسات التعليم والتعلم</h2>
+                        </div>
+                        <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
                     </div>
-                    <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
-                </div>
-                <div class="form w-100">
-                    <a class="col-6 col-sm-3" href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <spam>الاسـتـبـيــان</spam> 
-                    </a>
+                    <div class="form w-100">
+                        <a class="col-6 col-sm-3" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <spam>الاسـتـبـيــان</spam> 
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-<!----------------------------------------------->
-        <div class="viewport w-100">
-            <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
-            <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8">
-                <div class="container">
-                    <div class="hh">
-                        <h1>نموذج تحديد سياسات التعليم والتعلم</h1>
+            <!----------------------------------------------->
+            <div class="viewport w-100">
+                <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
+                <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8" id="secsion_2">
+                    <div class="container">
+                        <div class="hed">
+                            <h2>نموذج تحديد أساليب التعليم والتعلم</h2>
+                        </div>
+                        <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
                     </div>
-                    <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
-                </div>
-                <div class="form w-100">
-                    <a class="col-6 col-sm-3" href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <spam>الاسـتـبـيــان</spam> 
-                    </a>
+                    <div class="form w-100">
+                        <a class="col-6 col-sm-3" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <spam>الاسـتـبـيــان</spam> 
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-<!----------------------------------------------->
-        <div class="viewport w-100">
-            <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
-            <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8">
-                <div class="container">
-                    <div class="hh">
-                        <h1>نموذج تحديد سياسات التعليم والتعلم</h1>
+            <!----------------------------------------------->
+            <div class="viewport w-100">
+                <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
+                <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8" id="secsion_3">
+                    <div class="container">
+                        <div class="hed">
+                            <h2>نموذج التعلم الذاتى</h2>
+                        </div>
+                        <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
                     </div>
-                    <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
-                </div>
-                <div class="form w-100">
-                    <a class="col-6 col-sm-3" href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <spam>الاسـتـبـيــان</spam> 
-                    </a>
+                    <div class="form w-100">
+                        <a class="col-6 col-sm-3" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <spam>الاسـتـبـيــان</spam> 
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-<!----------------------------------------------->
-        <div class="viewport w-100">
-            <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
-            <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8">
-                <div class="container">
-                    <div class="hh">
-                        <h1>نموذج تحديد سياسات التعليم والتعلم</h1>
+            <!----------------------------------------------->
+            <div class="viewport w-100">
+                <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
+                <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8" id="secsion_4">
+                    <div class="container">
+                        <div class="hed">
+                            <h2>نموذج تدريب وتنمية مهارات الطلاب</h2>
+                        </div>
+                        <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
                     </div>
-                    <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
-                </div>
-                <div class="form w-100">
-                    <a class="col-6 col-sm-3" href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <spam>الاسـتـبـيــان</spam> 
-                    </a>
+                    <div class="form w-100">
+                        <a class="col-6 col-sm-3" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <spam>الاسـتـبـيــان</spam> 
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-<!----------------------------------------------->
-        <div class="viewport w-100">
-            <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
-            <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8">
-                <div class="container">
-                    <div class="hh">
-                        <h1>نموذج تحديد سياسات التعليم والتعلم</h1>
+        <!----------------------------------------------->
+            <div class="viewport w-100">
+                <div class="d-none d-md-block col-md-4 col-lg-4 col-xl-3"></div>
+                <div class="content col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8" id="secsion_5">
+                    <div class="container">
+                        <div class="hed">
+                            <h2>نموذج نظام التقويم لمخرجات التعلم</h2>
+                        </div>
+                        <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
                     </div>
-                    <p>  سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم سياسات التعليم والتعلم</p>
-                </div>
-                <div class="form w-100">
-                    <a class="col-6 col-sm-3" href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <spam>الاسـتـبـيــان</spam> 
-                    </a>
+                    <div class="form w-100">
+                        <a class="col-6 col-sm-3" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <spam>الاسـتـبـيــان</spam> 
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 <!----------------------------------------------->
         <script src="all.min.js"></script>
         <script src="bootstrap.min.js"></script>
+        <script src="JSproject.js"></script>
     </body>
 </html>
