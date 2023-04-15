@@ -11,59 +11,40 @@
         <title></title>
     </head>
 <!----------------------------------------------->
-    <body>
+    <body class="boody">
         <nav class="mainNav navbar navbar-expand-lg bg-light navMain navbar-light d-block d-md-none">
+            <div class="background"></div>
             <div class="nav1 container-fluid">
-                <a class="navbar-brand namozag" href="#">النماذج</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" id="openMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="col-md-12 col-lg-12">
-                        <a class="button col-8" onclick="funSecsion_1()" id="butt_1" href="#butt_1">
-                            <i class="fa-solid fa-chalkboard-user icon"></i>
-                            نموذج تحديد سياسات التعليم والتعلم
-                        </a>
-                        <a class="button col-8" onclick="funSecsion_2()" id="butt_2" href="#butt_2">
-                            <i class="fa-solid fa-chalkboard-user icon"></i>
-                            نموذج تحديد أساليب التعليم والتعلم
-                        </a>
-                        <a class="button col-8" onclick="funSecsion_3()" id="butt_3" href="#butt_3">
-                            <i class="fa-solid fa-chalkboard-user icon"></i>
-                            نموذج التعلم الذاتى
-                        </a>
-                        <a class="button col-8" onclick="funSecsion_4()" id="butt_4" href="#butt_4">
-                            <i class="fa-solid fa-chalkboard-user icon"></i>
-                            نموذج تدريب وتنمية مهارات الطلاب
-                        </a>
-                        <a class="button col-8" onclick="funSecsion_5()" id="butt_5" href="#butt_5">
-                            <i class="fa-solid fa-chalkboard-user icon"></i>
-                            نموذج نظام التقويم لمخرجات التعلم
-                        </a>
-                    </ul>
-                </div>
+                <a class="navbar-brand namozag" href="#">النماذج</a>
             </div>
         </nav>
 <!----------------------------------------------->
-        <div class="sidebar d-none d-md-block col-md-4 col-lg-4 col-xl-3">
-            <ul class="col-md-12 col-lg-12">
-                <a class="button col-md-12 col-lg-11" onclick="funSecsion_1()" id="but_1" href="#but_1">
+        <div class="sidebar col-md-4 col-lg-4 col-xl-3 col-7" id="openMenu">
+            <div class="top_1">
+                <p>النماذج</p>
+                <button id="close"><i class="fa-regular fa-circle-xmark closeIcon"></i></button>
+            </div>
+            <ul class="mainMenu col-md-12 col-lg-12">
+                <a class="button col-11 col-md-12 col-lg-11" onclick="funSecsion_1()" id="but_1" href="#but_1">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج تحديد سياسات التعليم والتعلم
                 </a>
-                <a class="button col-md-12 col-lg-11" onclick="funSecsion_2()" id="but_2" href="#but_2">
+                <a class="button col-11 col-md-12 col-lg-11" onclick="funSecsion_2()" id="but_2" href="#but_2">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج تحديد أساليب التعليم والتعلم
                 </a>
-                <a class="button col-md-12 col-lg-11" onclick="funSecsion_3()" id="but_3" href="#but_3">
+                <a class="button col-11 col-md-12 col-lg-11" onclick="funSecsion_3()" id="but_3" href="#but_3">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج التعلم الذاتى
                 </a>
-                <a class="button col-md-12 col-lg-11" onclick="funSecsion_4()" id="but_4" href="#but_4">
+                <a class="button col-11 col-md-12 col-lg-11" onclick="funSecsion_4()" id="but_4" href="#but_4">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج تدريب وتنمية مهارات الطلاب
                 </a>
-                <a class="button col-md-12 col-lg-11" onclick="funSecsion_5()" id="but_5" href="#but_5">
+                <a class="button col-11 col-md-12 col-lg-11" onclick="funSecsion_5()" id="but_5" href="#but_5">
                     <i class="fa-solid fa-chalkboard-user icon"></i>
                     نموذج نظام التقويم لمخرجات التعلم
                 </a>
@@ -177,6 +158,8 @@
             </div>
         </div>
 <!----------------------------------------------->
+        <script src="JQueryConnect.js"></script>
+        <script src="jqueryProject.js"></script>
         <script src="all.min.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="JSproject.js"></script>
