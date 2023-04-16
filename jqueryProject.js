@@ -1,16 +1,12 @@
-var over = document.getElementById(".boody");
+var over = document.getElementById("boody");
+
 $("#openMenu").click(function(){
+    over.style.overflowY="hidden";
+    $("#menu").show(300);
     $(".background").show(100);
-    $(".sidebar").show(300);
 })
 $("#close").click(function(){
-    $(".sidebar").hide(300);
+    over.style.overflowY="scroll";
+    $("#menu").hide(400);
     $(".background").hide(100);
 })
-//var size = 768;
-//var screen = screen.width;
-//console.log("screen.width after = " + screen);
-//if( screen >= size){
-//    console.log("screen.width = " + screen);
-//    $(".sidebar").show(300);
-//}
