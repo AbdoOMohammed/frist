@@ -9,6 +9,21 @@
     color: black;
     margin-left: 10px;
 }
+.top_1{
+    padding: 15px 20px;
+    background-color: #ff8e03eb;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #e1e1e1;
+}
+.top_1 p{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
 /*---------nav--------*/
 .mainNav .namozag{
     margin: 0px;
@@ -87,6 +102,9 @@ a{
         margin: 15px 2px;
         font-size: 12px;
     }
+    .top_1 p{
+        font-size: 16px;
+    }
     #close{
         background: none;
         border: none;
@@ -102,18 +120,6 @@ a{
         padding: 10px 0;
         margin: 5px;
     }
-    .top_1{
-        padding: 15px 20px;
-        background-color: #ff8e03eb;
-        display: flex;
-        justify-content: space-between;
-        color: white;
-        margin-bottom: 40px;
-    }
-    .top_1 P{
-        margin: 0;
-        padding: 0;
-    }
     /*---------background--------*/
     .background{
         display: none;
@@ -128,8 +134,12 @@ a{
 }
 /*--------Pc--------------*/
 @media (min-width: 768px) { 
-    .top_1{
+    #close{
         display: none;
+    }
+    .top_1{
+        justify-content: center;
+        margin-bottom: 0px;
     }
     .button:target:before{
         left: -75px;
@@ -263,6 +273,16 @@ spam{
     box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
     transition-delay: 0.5s;
 }
-
+.content li{
+    font-size: 16px;
+    padding: 15px;
+    list-style-type: square;
+}
+.text span{
+    position: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
 
 
