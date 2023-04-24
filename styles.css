@@ -35,7 +35,7 @@
     padding: 2px;
     border-bottom: 2px solid #e1e1e1;
     z-index: 99;
-    box-shadow: rgb(86 86 86 / 22%) 0px 1px 5px 0px;
+    box-shadow: rgb(86 86 86 / 22%) 0px 1px 5px 1px;
 }
 .nav1{
     padding: 5px 12px;
