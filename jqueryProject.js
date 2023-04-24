@@ -1,4 +1,3 @@
-
 var over = document.getElementById("boody");
 
 $("#openMenu").click(function(){
@@ -14,14 +13,7 @@ $("#close").click(function(){
 })
 
 $(".end").click(function(){
-    over.style.overflowY="hidden";
-    $("#menu").hide(600);
-    $(".background").hide(600);
+    over.style.overflowY="scroll";
+    $("#menu").hide(400);
+    $(".background").hide(300);
 })
-///////////////////////////////
-
-$(".b3").click(function(){
-    $(".hhh").animate({
-        width: "toggle"
-    });
-});
