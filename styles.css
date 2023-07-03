@@ -38,17 +38,20 @@ ul{
     margin-bottom: 40px;
     border-bottom: 1px solid #9e9e9e;
 }
-.top_2 p,.top_1 p{
+.top_2 p{
     font-size: 22px;
     font-weight: bold;
     margin: 0;
-    padding: 0;
+}
+.top_1 p{
+    font-size: 18px ;
+    font-weight: bold;  
 }
 /*---------nav--------*/
 .mainNav .namozag{
     margin: 0;
     border-radius: 9px;
-    padding: 5px 10px;
+    padding: 4px 6px;
 }
 button#openMenu {
 }
@@ -61,7 +64,7 @@ button#openMenu {
     box-shadow: rgb(255 182 6 / 28%) 0px 7px 5px 1px;
 }
 .nav1{
-    padding: 5px 3%;
+    padding: 4px 4%;
 }
 .mainNav .button{
     padding: 10px 0px;
