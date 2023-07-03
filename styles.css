@@ -5,6 +5,11 @@
     font-size: 16px;
     font-family: 'arabic';
 }
+@media (max-width: 576px){
+    .mainNav .button{
+        font-size: 12px;
+    }
+}
 header{
     box-shadow: 0px 1px 5px 1px rgb(86 86 86 / 22%) !important;
 }
@@ -35,15 +40,18 @@ ul{
 }
 /*---------nav--------*/
 .mainNav .namozag{
-    margin: 0px;
-    box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
+    margin-left: 9px;
     border-radius: 9px;
     padding: 5px 10px;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+}
+button#openMenu {
+    margin-right: 28px;
 }
 .mainNav{
     padding: 2px;
-    border-bottom: 2px solid #e1e1e1;
-    box-shadow: rgb(86 86 86 / 22%) 0px 1px 5px 1px;
+    border-top: 1px solid #e1e1e1;
+    box-shadow: rgb(86 86 86 / 18%) 0px 7px 5px 1px;
 }
 .nav1{
     padding: 5px 12px;
@@ -51,7 +59,6 @@ ul{
 .mainNav .button{
     padding: 10px 0px;
     margin: 20px 0;
-    font-size: 12px;
 }
 .mainNav ul{
     display: flex;
@@ -97,7 +104,7 @@ a{
     transition: 0.5s ease-in-out;
 }
 /*----------mob------------*/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .viewport{
         padding: 0 10px !important;
     }
@@ -108,16 +115,15 @@ a{
         top: 0;
         right: -500px;
         z-index: 9999;
-/*        display: none;*/
         transition: 1.0s ease;
     }
     .button{
         padding: 5px 2px 5px 0;
         margin: 15px 2px;
-        font-size: 12px;
+/*        font-size: 12px;*/
     }
     .top_1 p{
-        font-size: 16px;
+        font-size: 20px;
     }
     #close{
         background: none;
@@ -125,7 +131,7 @@ a{
         margin-right: 10px;
     }
     .closeIcon{
-        font-size: 20px;
+        font-size: 24px;
         color: white;
     }
     .mainMenu{
@@ -147,7 +153,7 @@ a{
     }
 }
 /*--------Pc--------------*/
-@media (min-width: 768px) { 
+@media (min-width: 1200px) { 
     #close{
         display: none;
     }
@@ -181,6 +187,12 @@ a{
     .icon{
         font-size: 18px;
     }
+
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-toggler {
+    display: block !important;
+    }
 }
 /*---------content-------------*/
 .viewport{
@@ -189,7 +201,6 @@ a{
     padding: 0 75px;
 }
 h2{
-    /*    margin-right: -500%;*/
     padding: 12px;
     text-align: center;
     margin-top: 50px;
@@ -222,13 +233,14 @@ h2{
     display: inline-block;
     border-radius: 9px;
     padding: 10px 15px;
-    color: black ;
+    color: white;
     text-decoration: none;
     overflow: hidden;
     margin-top: 15px;
     text-align: center;
     box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
     transition: 0.3s;
+    background-color: #ffb606;
 }
 spam{
     font-weight: bolder;
@@ -285,8 +297,8 @@ spam{
     transition-delay: 0.5s;
 }
 .content a:hover{
-    color: white;
-    background-color: #ffb606;
+    color: black;
+    background-color: white;
     box-shadow: rgb(84 84 84 / 22%) 0px 1px 5px 0px;
     transition-delay: 0.5s;
 }
