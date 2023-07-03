@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
     <head>
         <title>Main Page</title>
         <meta charset="UTF-8">
@@ -11,14 +11,14 @@
     </head>
     <!----------------------------------------------->
     <body id="boody">
-        <nav class="mainNav navbar navbar-expand-lg bg-light navMain navbar-light d-block d-md-none">
+        <nav class="mainNav navbar navbar-expand-lg bg-light navMain navbar-light d-block d-xl-none">
             <div class="background"></div>
             <div class="nav1 container-fluid">
                 <button class="navbar-toggler" id="openMenu">
-                    <i class="fas fa-outdent iconNav"></i> 
+                    <i class="fas fa-outdent iconNav"></i>
                 </button>
                 <a class="navbar-brand namozag" href="#">النماذج</a>
-                <div class="sidebar col-md-4 col-lg-4 col-xl-3 col-7" id="menu">
+                <div class="sidebar col-7 col-md-5 col-lg-5 col-xl-3 " id="menu">
                     <div class="top_1">
                         <p>النماذج</p>
                         <button id="close">
@@ -26,23 +26,23 @@
                         </button>
                     </div>
                     <ul class="mainMenu col-md-12 col-lg-12">
-                        <a class="button end col-11 col-md-12 col-lg-11" onclick="funSecsion_1()" id="but_11" href="#but_11">
+                        <a class="button end col-11" onclick="funSecsion_1()" id="but_11" href="#but_11">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج تحديد سياسات التعليم والتعلم
                         </a>
-                        <a class="button end col-11 col-md-12 col-lg-11" onclick="funSecsion_2()" id="but_22" href="#but_22">
+                        <a class="button end col-11" onclick="funSecsion_2()" id="but_22" href="#but_22">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج تحديد أساليب التعليم والتعلم
                         </a>
-                        <a class="button end col-11 col-md-12 col-lg-11" onclick="funSecsion_3()" id="but_33" href="#but_33">
+                        <a class="button end col-11" onclick="funSecsion_3()" id="but_33" href="#but_33">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج التــعــلـــم الذاتــــــى
                         </a>
-                        <a class="button end col-11 col-md-12 col-lg-11" onclick="funSecsion_4()" id="but_44" href="#but_44">
+                        <a class="button end col-11" onclick="funSecsion_4()" id="but_44" href="#but_44">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج تدريب وتنمية مهارات الطلاب
                         </a>
-                        <a class="button end col-11 col-md-12 col-lg-11" onclick="funSecsion_5()" id="but_55" href="#but_55">
+                        <a class="button end col-11" onclick="funSecsion_5()" id="but_55" href="#but_55">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             نموذج نظام التقويم لمخرجات التعلم
                         </a>
@@ -50,9 +50,9 @@
                 </div>
             </div>
         </nav>
-        <!----------------------------------------------->
+        <!--------------------------------------------------------------->
         <div class="all">
-            <div class="sidebar col-md-4 col-lg-4 col-xl-3 col-7 d-none d-md-block">
+            <div class="sidebar col-md-4 col-lg-4 col-xl-3 col-7 d-none d-xl-block">
                 <div class="top_1">
                     <p>النماذج</p>
                     <button id="close">
@@ -82,7 +82,8 @@
                     </a>
                 </ul>
             </div>
-            <div class="viewport col-12 col-sm-12 col-md-8 col-lg-8 col-xl-9">
+<!----------------------------------------------->
+            <div class="viewport col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
                 <div class="content col-12" id="secsion_1">
                     <div class="container">
                         <div class="hed" id="hh2">
@@ -112,7 +113,7 @@
                         </div>
                     </div>
                     <div class="form w-100">
-                        <a class="col-6 col-sm-3" href="#">
+                        <a class="col-6 col-sm-3" target="_blank" href="https://forms.gle/skrvsRWXVFd7u8uE6">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -153,7 +154,7 @@
                         </div>
                     </div>
                     <div class="form w-100">
-                        <a class="col-6 col-sm-3" href="#">
+                        <a class="col-6 col-sm-3" target="_blank" href="https://forms.gle/ucMtmjMFTw18tuhVA">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -202,7 +203,7 @@
                         </div>
                     </div>
                     <div class="form w-100">
-                        <a class="col-6 col-sm-3" href="#">
+                        <a class="col-6 col-sm-3" target="_blank" href="https://forms.gle/uTh8LLHTCqr8vZzr6">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -245,7 +246,7 @@
                         </div>
                     </div>
                     <div class="form w-100">
-                        <a class="col-6 col-sm-3" href="#">
+                        <a class="col-6 col-sm-3" target="_blank" href="https://forms.gle/dTkXDLjqCVdJwnS17">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -282,7 +283,7 @@
                         </div>
                     </div>
                     <div class="form w-100">
-                        <a class="col-6 col-sm-3" href="#">
+                        <a class="col-6 col-sm-3" target="_blank" href="https://forms.gle/skrvsRWXVFd7u8uE6">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -293,7 +294,7 @@
                 </div>
             </div>
         </div>
-        <!----------------------------------------------->
+<!----------------------------------------------->
         <script src="all.min.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="JSproject.js"></script>
